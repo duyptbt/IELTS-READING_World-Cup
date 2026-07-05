@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Inter", sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-artistic-bg: #F4F1EE;
+  --color-artistic-charcoal: #0F0F0F;
+  --color-artistic-lime: #E2FF45;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F4F1EE; /* Warm sandstone background */
+  color: #0F0F0F;
+}
+
+/* Custom scrollbar for beautiful desktop layout in Artistic Flair style */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+  border-left: 1px solid rgba(15, 15, 15, 0.08);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 15, 15, 0.25);
+  border: 2px solid #FAF8F5;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(15, 15, 15, 0.55);
+}
+
+/* Active pulse animation for countdown clock */
+@keyframes timePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.05); }
+}
+
+.animate-clock-pulse {
+  animation: timePulse 1.8s infinite ease-in-out;
+}

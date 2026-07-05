@@ -1,0 +1,6 @@
+{
+  "name": "IELTS Academic Reading Test",
+  "description": "An interactive, beautifully styled IELTS Academic Reading practice test platform on 'The World Cup' with real-time feedback, grading, and explanations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
